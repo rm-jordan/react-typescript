@@ -16,7 +16,7 @@ interface Istate {
 function App() {
 
 
-const [people, setPeople] = useState<Istate["people"]>([
+const [people, setPeople] = useState <Istate["people"]>([
   {
     name: "Bender",
     age: 46,
@@ -31,7 +31,7 @@ const [people, setPeople] = useState<Istate["people"]>([
     <div className="App">
       <h1>People invited to our Party!</h1>
       <List people={people}/>
-      <AddToList />
+      <AddToList setPeople={setPeople} people={people}/>
     </div>
   );
 }
