@@ -15,7 +15,14 @@ interface Istate {
 function App() {
 
 
-const [people, setPeople] = useState<Istate["people"]>([]);
+const [people, setPeople] = useState<Istate["people"]>([
+  {
+    name: "Bender",
+    age: 46,
+    url: "https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png",
+    note: "Hey skinbag!",
+  }
+]);
 
 
 
